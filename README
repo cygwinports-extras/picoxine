@@ -1,0 +1,60 @@
+picoxine
+------------------------------------------
+PicoXine is a (very small) XINE implementation for playing audio events 
+as a replacement for ARTS. It's extremely small (the source code is only 
+3.0KiB long!) It offers great response time, it's faster than MPlayer 
+upon start-up, and it has no stdout output if no errors are found. It's, 
+therefore, completely transparent.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libxine1-1.1.8-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.5-1
+  gcc-core-3.4.4-3
+  pkg-config-0.21-1
+
+Canonical website:
+  http://www.kde-apps.org/content/show.php?content=39596
+
+Canonical download:
+  http://www.kde-apps.org/content/show.php?content=39596
+
+-------------------------------------------
+
+Build instructions:
+  unpack picoxine-0.0.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./picoxine-0.0.7-X.cygport all
+
+This will create:
+  /usr/src/picoxine-0.0.7-X-src.tar.bz2
+  /usr/src/picoxine-0.0.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/picoxine.exe
+  /usr/share/doc/Cygwin/picoxine-0.0.7.README
+  /usr/share/doc/picoxine-0.0.7/AUTHORS
+  /usr/share/doc/picoxine-0.0.7/INSTALL
+  /usr/share/doc/picoxine-0.0.7/LICENSE
+  /usr/share/doc/picoxine-0.0.7/README
+
+------------------
+
+Port Notes:
+
+----- version 0.0.7-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

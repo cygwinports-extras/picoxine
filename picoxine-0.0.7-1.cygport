@@ -1,0 +1,17 @@
+inherit utils
+
+apps=39596
+DESCRIPTION="Extremely small CLI Xine audio player"
+HOMEPAGE="http://www.kde-apps.org/content/show.php?content=${apps}"
+SRC_URI="http://www.kde-apps.org/CONTENT/content-files/${apps}-${P}.tar.bz2"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	check_pkg_config XINE libxine
+	verbose gcc ${CFLAGS} ${XINE_CFLAGS} ${LDFLAGS} -o ${PN}.exe ${PN}.c ${XINE_LIBS} || error "compile failed"
+}
+
+src_install() {
+	dobin ${B}/${PN}.exe
+}

@@ -1,0 +1,8 @@
+category: Audio
+requires: cygwin libxine1
+sdesc: "Simple CLI Xine audio player"
+ldesc: "PicoXine is a (very small) XINE implementation for playing audio 
+events as a replacement for ARTS. It's extremely small (the source code 
+is only 3.0KiB long!) It offers great response time, it's faster than 
+MPlayer upon start-up, and it has no stdout output if no errors are 
+found. It's, therefore, completely transparent."
