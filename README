@@ -7,16 +7,16 @@ upon start-up, and it has no stdout output if no errors are found. It's,
 therefore, completely transparent.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libxine1-1.1.8-1
+  cygwin-1.7.0-51
+  libgcc1-4.3.2-2
+  libxine1-1.1.16.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  binutils-20060817-1
-  cygport-0.3.5-1
-  gcc-core-3.4.4-3
-  pkg-config-0.21-1
+  binutils-2.19.51-1
+  cygport-0.9.7-1
+  gcc4-core-4.3.2-2
+  pkg-config-0.23b-10
 
 Canonical website:
   http://www.kde-apps.org/content/show.php?content=39596
@@ -42,18 +42,16 @@ This will create:
 Files included in the binary package:
 
   /usr/bin/picoxine.exe
-  /usr/share/doc/Cygwin/picoxine-0.0.7.README
-  /usr/share/doc/picoxine-0.0.7/AUTHORS
-  /usr/share/doc/picoxine-0.0.7/INSTALL
-  /usr/share/doc/picoxine-0.0.7/LICENSE
-  /usr/share/doc/picoxine-0.0.7/README
+  /usr/share/doc/picoxine/AUTHORS
+  /usr/share/doc/picoxine/LICENSE
+  /usr/share/doc/picoxine/README
 
 ------------------
 
 Port Notes:
 
------ version 0.0.7-1 -----
-Initial release for Cygwin.
+----- version 0.0.7-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

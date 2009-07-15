@@ -1,5 +1,5 @@
 category: Audio
-requires: libxine1
+requires: libgcc1 libxine1
 sdesc: "Simple CLI Xine audio player"
 ldesc: "PicoXine is a (very small) XINE implementation for playing audio 
 events as a replacement for ARTS. It's extremely small (the source code 
