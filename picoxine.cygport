@@ -1,0 +1,25 @@
+inherit utils
+
+NAME="picoxine"
+VERSION=0.0.7
+RELEASE=11
+CATEGORY="Audio"
+SUMMARY="Simple CLI Xine audio player"
+DESCRIPTION="PicoXine is a (very small) XINE implementation for playing audio
+events as a replacement for ARTS. It offers great response time, it's faster
+than MPlayer upon start-up, and it has no stdout output if no errors are found.
+It's, therefore, completely transparent."
+HOMEPAGE="http://www.kde-apps.org/content/show.php?content=39596"
+SRC_URI="http://www.kde-apps.org/CONTENT/content-files/39596-${P}.tar.bz2"
+PATCH_URI="0.0.7-oss.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	check_pkg_config XINE libxine
+	verbose ${CC} ${CFLAGS} ${XINE_CFLAGS} ${LDFLAGS} -o ${PN}.exe ${PN}.c ${XINE_LIBS} || error "compile failed"
+}
+
+src_install() {
+	dobin ${B}/${PN}.exe
+}
